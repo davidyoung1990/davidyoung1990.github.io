@@ -7,12 +7,16 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="/* Zepto 1.2.0 - zepto event ajax form ie fx touch selector - zeptojs.com/license */ (function(global, factory) {   if (typeof define === &apos;function&apos; &amp;&amp; define.amd)     define(function() { return facto">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/01/24/suning2/assets/zepto/zepto/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="/* Zepto 1.2.0 - zepto event ajax form ie fx touch selector - zeptojs.com/license */ (function(global, factory) {   if (typeof define === &apos;function&apos; &amp;&amp; define.amd)     define(function() { return facto">
+<meta property="og:updated_time" content="2018-01-22T09:45:42.345Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="/* Zepto 1.2.0 - zepto event ajax form ie fx touch selector - zeptojs.com/license */ (function(global, factory) {   if (typeof define === &apos;function&apos; &amp;&amp; define.amd)     define(function() { return facto">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,100 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-suning2/js/index" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/24/suning2/js/index/" class="article-date">
-  <time datetime="2018-01-24T08:50:33.993Z" itemprop="datePublished">2018-01-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        $(function () {
-    /*轮播图*/
-    var $banner = $('.sn_banner');
-    var width = $banner.width();
-    // 1. zepto 的选择器 底层使用的是 querySelectorAll 不能使用jquery的扩展选择器
-    var $imageBox = $banner.find('ul:first-child');
-    var $pointBox = $banner.find('ul:eq(1)');
-    var animateFuc = function () {
-        // 2. 动画函数没有默认包含在核心文件里头 fx 的动画模块
-        $imageBox.animate({'transform':'translateX('+(-index*width)+'px)'},200,'linear',function () {
-            if(index >= 9){
-                index = 1;
-
-                /*瞬间*/
-                $imageBox.css({'transform':'translateX('+(-index*width)+'px)'});
-            }else if( index 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/24/suning2/js/index/" data-id="cjcstyper0004ugr22jot9z2x" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-suning2/css/index" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/24/suning2/css/index/" class="article-date">
-  <time datetime="2018-01-24T08:50:33.681Z" itemprop="datePublished">2018-01-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        .sn_topBar{
-    width:100%;
-    background: #fa0;
-    height: 90px;
-    position: fixed;
-    left:0;
-    top:0;
-    z-index: 999;
-}
-.sn_topBar a{
-    width:90px;
-    height:90px;
-    position: absolute;
-    top:0;
-
-}
-.sn_topBar .icon_category{
-    left: 0;
-    background: url("../images/icon_category.png")no-repeat center 44px / 100px;
-}
-.sn_topBar .icon_car{
-    right:0;
-    background: url("../images/icon_cart.png") no-repeat center 63px / 100px;
-}
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/24/suning2/css/index/" data-id="cjcstyper0003ugr23xtk6nrq" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-suning2/assets/zepto/zepto" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-suning2/assets/zepto/zepto" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/24/suning2/assets/zepto/zepto/" class="article-date">
   <time datetime="2018-01-24T08:50:33.618Z" itemprop="datePublished">2018-01-24</time>
@@ -2072,168 +1983,28 @@ window.$ === undefined && (window.$ = Zepto)
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-suning2/index" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/24/suning2/index/" class="article-date">
-  <time datetime="2018-01-24T08:50:33.525Z" itemprop="datePublished">2018-01-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/index.css">
-    <title>suning</title>
-</head>
-<body>
-    <!-- 版心容器 -->
-    <div class="su_layout">
-        <!-- 顶部通栏 -->
-        <div class="sn_topBar">
-           <a href="#" class="icon_category"></a>
-           <form action="#">
-               <span class="icon_search"></span>
-               <input type="search" placeholder="60寸电视免费拿">
-           </form>
-           <a href="#" class="icon_car"></a>
-        </div>
-        <!-- 轮播图 -->
-        <div class="sn_banner">
-           <ul>
-               <li><a href="#"><img src="images/banner08.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner01.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner02.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner03.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner04.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner05.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner06.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner07.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner08.jpg" alt=""></a></li>
-               <li><a href="#"><img src="images/banner01.jpg" alt=""></a></li>
-           </ul>
-           <ul>
-               <li class="active"></li>
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-           </ul>
-        </div>
-    </div>
-    <script src="assets/zepto/zepto.js"></script>
-</body>
-</html>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/24/suning2/index/" data-id="cjcstypdv0002ugr2vf6j2fgu" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="hello-davidyoung" class="article article-type-hello" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/24/davidyoung/" class="article-date">
-  <time datetime="2018-01-24T08:27:14.000Z" itemprop="datePublished">2018-01-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2018/01/24/suning2/css/index/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/24/davidyoung/">davidyoung</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>davidyoung first blog;</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/24/davidyoung/" data-id="cjcstypc50000ugr2fpv5vzug" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/24/hello-world/" class="article-date">
-  <time datetime="2018-01-24T07:19:52.070Z" itemprop="datePublished">2018-01-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          (no title)
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/24/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2018/01/24/suning2/index/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/24/hello-world/" data-id="cjcstypcl0001ugr2eloi59on" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
